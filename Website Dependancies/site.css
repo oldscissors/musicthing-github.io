@@ -9,7 +9,7 @@
 
 	}
 	section {
-		background-color: white;
+		background-color: rgb(255, 255, 255);
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -33,7 +33,7 @@
 		flex: 1;
 	}
 	section { 
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -52,12 +52,12 @@ body {
 	font-family: 'Roboto Slab', serif;
 	margin: 0;
 	padding: 0;
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 }
 
 h1 {
 	font-size: 3rem;
-	color: white;
+	color: rgb(255, 255, 255);
 	display: block;
 	text-align: center;
 }
@@ -68,7 +68,7 @@ h2,h3,h4 {
 	display: block;
 	text-align: left;
 	padding-left: 25%;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
@@ -103,16 +103,16 @@ header {
 	background-color: #001bff;
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .bg1 {
-	background-color: #ffe400;
+	background-color: #bae1ff;
 }
 
 .bg2 {
-	background-color: #001bff;
+	background-color: #4f4f4f;
 }
 
 .bg3 {
@@ -127,8 +127,8 @@ iframe {
 }
 
 footer {
-	height: 100px;
-	background-color: #001bff;
+	height: 50px;
+	background-color: #515151;
 }
 
 #complete {
@@ -136,5 +136,5 @@ footer {
 }
 
 #incomplete {
-	background-color: red;
+	background-color: rgb(122, 147, 255);
 }
