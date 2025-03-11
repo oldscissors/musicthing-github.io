@@ -4,7 +4,14 @@
 //
 //Global Variables
 //
-void setup() {}
+void setup() {
+  fullScreen();
+  println(displayWidth, displayHeight);
+  int appWidth = displayWidth;
+  //
+  // rect();
+  //
+}
 //
 void draw() {}
 //
