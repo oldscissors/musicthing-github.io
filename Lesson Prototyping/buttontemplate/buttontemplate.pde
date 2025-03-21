@@ -21,12 +21,13 @@ void setup() {
   divY = appHeight*1/4;
   divWidth = appWidth*1/2;
   divHeight = appHeight*1/2;
-  float smallerSide = ( divWidth < divHeight ) ? divWidth : divHeight ; //Ternary Operator, basically if and else
+  float smallerSide = ( divWidth < divHeight ) ? divWidth : divHeight ; //Ternary Operator, basically if and else i think
   
   musicButtonX = divX;
   musicButtonY = divY;
   musicButtonWidth = smallerSide;
   musicButtonHeight = smallerSide;
+  println(musicButtonX, musicButtonY, musicButtonWidth, musicButtonHeight);
   
   stopX = musicButtonX; 
   stopY = musicButtonY;
@@ -39,6 +40,7 @@ void setup() {
   rect(divX, divY, divWidth, divHeight);
   rect(musicButtonX, musicButtonY, musicButtonWidth, musicButtonHeight);
   rect(stopX, stopY, stopWidth, stopHeight);
+  
   
 } //END setup
 //
