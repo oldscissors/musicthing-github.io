@@ -1,5 +1,5 @@
 /* Button templates: most buttons
- - idk :3
+ - idk
  */
 //
 //Library - minim
@@ -27,12 +27,13 @@ void setup() {
   musicButtonY = divY;
   musicButtonWidth = smallerSide;
   musicButtonHeight = smallerSide;
-  println(musicButtonX, musicButtonY, musicButtonWidth, musicButtonHeight);
-  
   stopX = musicButtonX; 
   stopY = musicButtonY;
   stopWidth = musicButtonWidth*1/2;
   stopHeight = musicButtonHeight*1/2;
+  println(musicButtonX, musicButtonY, musicButtonWidth, musicButtonHeight);
+  
+
   
   //
   //DIVs: musicButtonDIV
