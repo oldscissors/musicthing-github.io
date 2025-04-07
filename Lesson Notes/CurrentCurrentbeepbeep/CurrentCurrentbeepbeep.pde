@@ -16,7 +16,10 @@ float fifthButtonX, fifthButtonY, fifthButtonWidth, fifthButtonHeight;
 float sixthButtonX, sixthButtonY, sixthButtonWidth, sixthButtonHeight;
 float seventhButtonX, seventhButtonY, seventhButtonWidth, seventhButtonHeight;
 float stopButtonX, stopButtonY, stopButtonWidth, stopButtonHeight;
-float songTimeX, songTimeY, songTimeWidth, songTimeHeight;
+float songBarX, songBarY, songBarWidth, songBarHeight;
+float songTimeRX, songTimeRY, songTimeRWidth, songTimeRHeight;
+float songTimeLX, songTimeLY, songTimeLWidth, songTimeLHeight;
+float muteX, muteY, muteWidth, muteHeight;
 
 //
 void setup() {
@@ -79,16 +82,31 @@ void setup() {
   seventhButtonY = firstButtonY;
   seventhButtonWidth = firstButtonWidth;
   seventhButtonHeight = firstButtonHeight;
-  
+  /*------------- END OF MAIN BUTTONS ----------------*/
   stopButtonX = fourthButtonX;
   stopButtonY = appHeight * 0.81;
   stopButtonWidth = firstButtonWidth;
   stopButtonHeight = firstButtonHeight;
   
-  songTimeX = appWidth * 0.34;
-  songTimeY = appHeight * 0.67;
-  songTimeWidth = appWidth * 0.32;  
-  songTimeHeight = appHeight * 0.04;
+  songBarX = appWidth * 0.34;
+  songBarY = appHeight * 0.67;
+  songBarWidth = appWidth * 0.32;  
+  songBarHeight = appHeight * 0.04;
+  
+  songTimeRX = appWidth * 0.665;
+  songTimeRY = appHeight * 0.67; 
+  songTimeRWidth = appWidth * 0.05; 
+  songTimeRHeight = appHeight * 0.04;
+  
+  songTimeLX = appWidth * 0.285;
+  songTimeLY = appHeight * 0.67; 
+  songTimeLWidth = appWidth * 0.05; 
+  songTimeLHeight = appHeight * 0.04;
+  
+  muteX = songTimeRX;
+  muteY = appHeight * 0.61;
+  muteWidth = firstButtonWidth;
+  muteHeight = firstButtonHeight;
   
   fullScreen();
   // Rectangle part below;
@@ -105,7 +123,10 @@ void setup() {
   rect(sixthButtonX, sixthButtonY, sixthButtonWidth, sixthButtonHeight);
   rect(seventhButtonX, seventhButtonY, seventhButtonWidth, seventhButtonHeight);
   rect(stopButtonX, stopButtonY, stopButtonWidth, stopButtonHeight);
-  rect(songTimeX, songTimeY, songTimeWidth, songTimeHeight);
+  rect(songBarX, songBarY, songBarWidth, songBarHeight);
+  rect(songTimeRX, songTimeRY, songTimeRWidth, songTimeRHeight);
+  rect(songTimeLX, songTimeLY, songTimeLWidth, songTimeLHeight);
+  rect(muteX, muteY, muteWidth, muteHeight);
   
   /*
   
