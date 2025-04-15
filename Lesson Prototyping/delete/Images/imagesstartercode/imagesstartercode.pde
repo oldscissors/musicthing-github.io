@@ -3,32 +3,40 @@
 //Library - minim
 //
 //Global Variables
+int appWidth, appHeight;
 float imageDivX, imageDivY, imageDivWidth, imageDivHeight;
 //
-PImage myFIrstPictureVariable;
+PImage myFirstImage;
 void setup() {
   //
   fullScreen();
-  appWidth = ;
-  appHeight = ;
+  appWidth = displayWidth;
+  appHeight = displayHeight;
   //
   //Population
   
-  imageDivX = ;
-  imageDivY = ;
-  imageDivWidth = ;
-  imageDivHeight = ;
+  imageDivX = appWidth*0.3;
+  imageDivY = appHeight*0.3;
+  imageDivWidth = appWidth*0.33;
+  imageDivHeight = appHeight*0.4;
   
   //
   //Image Aspect Ratio Algorithm
-  String myFirstPictureVariablePathway = ;
-  myFirstPictureVariable = ;
+  String myFirstPictureVariablePathway = "/pic.png";
+  myFirstImage = loadImage(myFirstPictureVariablePathway);
+  int myFirstImageWidth = 787;
+  int myFirstImageHeight = 522;
+  float imageAspectRatioGreaterThanOne = ( myFirstImageWidth >= myFirstImageHeight ) ? myFirstImageWidth / myFirstImageHeight : myFirstImageHeight / myFirstImageWidth ;
+  //square is landscape, square is rare.
+  println(imageAspectRatioGreaterThanOne, "dkdkdkdkdkkdkdkdkdkdkkd");
+  //CONTINUEE H-EAR
+  //imageWidthChangedDrK, imageHeightChangedPuro
   //
   //DIV
   rect( imageDivX, imageDivY, imageDivWidth, imageDivHeight );
   //
   //Prototype Images
-  image( myFirstPictureVariable, imageDivX, imageDivY, imageDivWidth, imageDivHeight );
+  //image( myFirstImage, imageDivX, imageDivY, imageWidthChangedDrK, imageHeightChangedPuro );
 } //END setup
 //
 void draw() {
